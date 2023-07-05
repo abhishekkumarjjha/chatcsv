@@ -6,7 +6,7 @@ import pandas as pd
 
 
 
-API_KEY = "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"
+API_KEY = "[YOUR-OPENAI-KEY]"
 
 
 def create_agent(filename: str):
