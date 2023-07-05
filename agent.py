@@ -4,8 +4,6 @@ from langchain.llms import OpenAI
 from langchain.agents import create_pandas_dataframe_agent
 import pandas as pd
 
-
-
 API_KEY = "[YOUR-OPENAI-KEY]"
 
 
@@ -44,18 +42,7 @@ def query_agent(agent, query):
 
     prompt = (
         """
-            For the following query, if it requires drawing a table, reply as follows:
-            {"table": {"columns": ["column1", "column2", ...], "data": [[value1, value2, ...], [value1, value2, ...], ...]}}
-
-            If the query requires creating a bar chart, reply as follows:
-            {"bar": {"columns": ["A", "B", "C", ...], "data": [25, 24, 10, ...]}}
-
-            If the query requires creating a line chart, reply as follows:
-            {"line": {"columns": ["A", "B", "C", ...], "data": [25, 24, 10, ...]}}
-
-            There can only be two types of chart, "bar" and "line".
-
-            If it is just asking a question that requires neither, reply as follows:
+            If it is just asking a question, reply as follows:
             {"answer": "answer"}
             Example:
             {"answer": "The title with the highest rating is 'Gilead'"}
