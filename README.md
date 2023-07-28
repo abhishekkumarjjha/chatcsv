@@ -14,6 +14,7 @@ This will open the app on the browser
 
 Look at the video below:
 
+NOTE: PLEASE REPLACE [YOUR_API_KEY] IN agent.py WITH YOUR ORIGINAL OPEN-AI API KEYS
 
 
 https://github.com/abhishekkumarjjha/chatcsv/assets/127896599/2a4a356f-76eb-4c87-a795-7bc0014d75ae
