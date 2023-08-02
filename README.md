@@ -5,7 +5,7 @@ Step 1: Download python and set up the environment: Recommended Anaconda Navigat
 
 Step 2: Install libraries: openai, langchain, pandas, env,streamlit
 
-Step 3: Activate the environment, go to the file directory and run the following code:
+Step 3: Activate the environment (Restart it), go to the file directory and run the following code:
 
       streamlit run app.py 
 
